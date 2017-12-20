@@ -1,21 +1,35 @@
 package ooplab3;
 
-public class Testpin {
- package ooplab3;
+package ooplab3;
 
-import java.util.Scanner;
+        import java.util.Scanner;
 
-    public class TestPIN {
-        public static void main(String[] args) {
-            Scanner keyboard = new Scanner(System.in);
-            System.out.print("Enter Pin Code: ");
-            int choice  = keyboard.nextInt();
-            if (choice == 1234) {
-                System.out.println("Welcome!");
-            }
-            else {
-                System.out.println("Locked");
-            }
-        }//main
-    }//class
+//0-49 = F
+//50-59 = D
+//60-69 = C
+//70-79 = B
+//80-100 = A
+public class CalGrade {
+    public static void main(String[] args) {
+// Scanner;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter Your score: ");
+
+        int score = scanner.nextInt();
+        //test condition
+
+        if (score <= 49)
+            System.out.println("Your grade is F");
+
+        else if (score <= 59)
+            System.out.println("Your grade is D");
+
+        else if (score <= 69)
+            System.out.println("Your grade is C");
+        else if (score <= 79)
+            System.out.println("Your grade is B");
+
+        else
+            System.out.println("Your grade is A");
+    }
 }

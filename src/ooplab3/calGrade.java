@@ -13,7 +13,7 @@ public class calGrade {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Your score: ");
 
-        int score = scanner.();
+        int score = scanner.nextInt();
         //test condition
 
         if (score <= 49)
