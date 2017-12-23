@@ -11,7 +11,7 @@ import java.util.Scanner;
 //4.ค่าน้อยที่สุด
 //5.แสดงข้อมูลโดยการเรียงจากน้อยไปมาก
 //6.แสดงข้อมูลโดยการเรียงจากมากไปน้อย
-public class Exercise {
+public class Exeercise {
     private static int MAX = 5;
     public static void main(String[] args) {
         Integer[] num = new Integer[MAX];
