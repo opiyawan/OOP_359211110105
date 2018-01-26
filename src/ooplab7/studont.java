@@ -9,6 +9,8 @@ import ooplab6.StringCompare;
 
 public class studont {
     //properties of student class
+    public static int age;
+    public String group;
     private String id;
     private String name;
     private String pid;
@@ -19,6 +21,7 @@ public class studont {
     //create by own//
     public studont (String id, String n,String pid, String a){
         //assing data to class properties// //
+        this.group = group;
         this.id = id;
         this.name = name;
         this.pid = pid;
@@ -26,14 +29,24 @@ public class studont {
     }
     //getter and setter methods
 
+
     @Override
     public String toString() {
         return "studont{" +
-                "id='" + id + '\'' +
+                "group='" + group + '\'' +
+                ", id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", pid='" + pid + '\'' +
                 ", address='" + address + '\'' +
                 '}';
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
     }
 
     public String getId() {
@@ -68,3 +81,6 @@ public class studont {
         this.address = address;
     }
 }
+
+
+
